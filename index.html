@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culdesac Case Study - Car-Free Urban Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Culdesac</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#community" class="nav-link">Approach</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#amenities" class="nav-link">Innovation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Case Study</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Culdesac: A Case Study in Car-Free Urban Development</h1>
+            <p class="hero-subtitle">Analyzing how one startup is reimagining American neighborhoods through sustainable, walkable design</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Explore the Company</button>
+        </div>
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="assets/video/culdesac-intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Culdesac</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Culdesac represents a bold experiment in American urban planning. Founded in 2018 by Ryan Johnson (CEO) and Jeff Berens (COO), the company aims to prove that car-free neighborhoods can succeed in the U.S. market.</p>
+                    <p>Their flagship project, Culdesac Tempe, is the first car-free neighborhood built from scratch in the United States. This 17-acre development in Tempe, Arizona, accommodates over 1,000 residents and demonstrates their vision for sustainable urban living.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>$30M</h3>
+                        <p>Series A Funding</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2023</h3>
+                        <p>Launch Year</p>
+                    </div>
+                    <div class="stat">
+                        <h3>55%</h3>
+                        <p>Open Space Ratio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="section carousel-section">
+        <div class="container">
+            <h2 class="section-title">Their Approach to Urban Design</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="assets/images/community-spaces.jpg" alt="Shared community spaces">
+                        <div class="slide-content">
+                            <h3>Community-First Design</h3>
+                            <p>Culdesac prioritizes shared spaces over private amenities, fostering neighbor interaction through courtyards and common areas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/images/walkable-streets.jpg" alt="Walkable streets">
+                        <div class="slide-content">
+                            <h3>Pedestrian-First Infrastructure</h3>
+                            <p>Every street is designed for walking and biking first, with cars as an afterthought - a radical departure from typical American suburban planning.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/images/sustainable-living.jpg" alt="Sustainable living">
+                        <div class="slide-content">
+                            <h3>Sustainable Building Practices</h3>
+                            <p>The development incorporates renewable energy, water conservation, and eco-friendly materials to minimize environmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="section">
+        <div class="container">
+            <h2 class="section-title">Innovation in Mobility & Services</h2>
+            <div class="amenities-grid">
+                <div class="amenity-card" onclick="openModal('transportation-modal')">
+                    <div class="amenity-icon">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <h3>Alternative Mobility Solutions</h3>
+                    <p>How Culdesac addresses transportation needs without private car ownership through integrated bike-share, rideshare, and delivery services</p>
+                </div>
+                <div class="amenity-card" onclick="openModal('wellness-modal')">
+                    <div class="amenity-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Health & Wellness Integration</h3>
+                    <p>Built-in wellness facilities and programs that leverage the walkable environment to promote healthier lifestyles</p>
+                </div>
+                <div class="amenity-card" onclick="openModal('dining-modal')">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Community Dining Model</h3>
+                    <p>Shared kitchen and dining spaces that reduce individual consumption while building community connections</p>
+                </div>
+                <div class="amenity-card" onclick="openModal('events-modal')">
+                    <div class="amenity-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Social Programming Strategy</h3>
+                    <p>Curated events and activities designed to foster neighbor relationships and community engagement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-section">
+        <div class="background-content">
+            <h2>The Future of American Urban Development</h2>
+            <p>Culdesac's model challenges traditional suburban planning and offers insights into sustainable community design</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Case Study: Culdesac Tempe</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('gallery-modal-1')">
+                    <img src="assets/images/gallery-1.jpg" alt="Culdesac Tempe aerial view">
+                </div>
+                <div class="gallery-item" onclick="openModal('gallery-modal-2')">
+                    <img src="assets/images/gallery-2.jpg" alt="Community courtyard">
+                </div>
+                <div class="gallery-item" onclick="openModal('gallery-modal-3')">
+                    <img src="assets/images/gallery-3.jpg" alt="Residents walking">
+                </div>
+                <div class="gallery-item" onclick="openModal('gallery-modal-4')">
+                    <img src="assets/images/gallery-4.jpg" alt="Bike lanes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Analysis & Insights</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Key Takeaways</h3>
+                    <p>What we can learn from Culdesac's approach to urban development</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Innovation in urban planning</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainable development model</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-users"></i>
+                            <span>Community-centered design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your thoughts on car-free urban development" required></textarea>
+                        <button type="submit">Share Your Analysis</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Culdesac Case Study</h3>
+                    <p>Analyzing innovative approaches to sustainable urban development and community design.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Study Sections</h4>
+                    <ul>
+                        <li><a href="#home">Overview</a></li>
+                        <li><a href="#about">Company</a></li>
+                        <li><a href="#community">Approach</a></li>
+                        <li><a href="#amenities">Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Research</h4>
+                    <div class="social-icons">
+                        <a href="https://x.com/culdesac" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/LiveCuldesac/" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/liveculdesac/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/liveculdesac" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Web Design Study Project. Educational use only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="transportation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('transportation-modal')">&times;</span>
+            <h2>Alternative Mobility Solutions</h2>
+            <p>Culdesac's approach to transportation challenges traditional American car dependency:</p>
+            <ul>
+                <li><strong>Bike Infrastructure:</strong> Comprehensive bike-share program with both electric and traditional bikes</li>
+                <li><strong>Micro-mobility:</strong> Electric scooters for short-distance travel</li>
+                <li><strong>Rideshare Integration:</strong> Partnerships with ride-sharing services for longer trips</li>
+                <li><strong>Delivery Services:</strong> Same-day delivery for groceries and packages, reducing shopping trips</li>
+                <li><strong>Public Transit:</strong> Strategic connections to existing public transportation networks</li>
+            </ul>
+            <p><strong>Innovation:</strong> This multi-modal approach proves that car-free living is viable in American suburbs.</p>
+        </div>
+    </div>
+
+    <div id="wellness-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('wellness-modal')">&times;</span>
+            <h2>Health & Wellness Integration</h2>
+            <p>Culdesac leverages the walkable environment to promote healthier lifestyles:</p>
+            <ul>
+                <li><strong>Built-in Fitness:</strong> State-of-the-art equipment integrated into the community</li>
+                <li><strong>Mindfulness Programs:</strong> Daily yoga and meditation classes</li>
+                <li><strong>Personal Training:</strong> On-site fitness professionals</li>
+                <li><strong>Outdoor Activities:</strong> Fitness areas that take advantage of the 55% open space</li>
+                <li><strong>Wellness Education:</strong> Workshops on healthy living and sustainability</li>
+            </ul>
+            <p><strong>Design Philosophy:</strong> Physical activity becomes part of daily life through intentional urban design.</p>
+        </div>
+    </div>
+
+    <div id="dining-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('dining-modal')">&times;</span>
+            <h2>Community Dining Model</h2>
+            <p>Culdesac's shared dining approach reduces individual consumption while building community:</p>
+            <ul>
+                <li><strong>Shared Kitchen:</strong> Commercial-grade facilities available to all residents</li>
+                <li><strong>Community Hall:</strong> Central dining space for group meals and events</li>
+                <li><strong>Outdoor Dining:</strong> Al fresco eating areas integrated with green spaces</li>
+                <li><strong>Educational Programs:</strong> Cooking classes and nutrition workshops</li>
+                <li><strong>Local Partnerships:</strong> Farm-to-table connections with regional suppliers</li>
+            </ul>
+            <p><strong>Social Impact:</strong> Shared dining spaces encourage neighbor interaction and reduce food waste.</p>
+        </div>
+    </div>
+
+    <div id="events-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('events-modal')">&times;</span>
+            <h2>Social Programming Strategy</h2>
+            <p>Culdesac curates events specifically designed to foster community connections:</p>
+            <ul>
+                <li><strong>Local Markets:</strong> Weekly farmers markets supporting regional producers</li>
+                <li><strong>Skill Sharing:</strong> Community workshops on sustainability and urban living</li>
+                <li><strong>Cultural Events:</strong> Performances and art installations in public spaces</li>
+                <li><strong>Outdoor Cinema:</strong> Movie nights utilizing the abundant outdoor areas</li>
+                <li><strong>Seasonal Celebrations:</strong> Community-wide events that build neighborhood identity</li>
+            </ul>
+            <p><strong>Community Building:</strong> Intentional programming creates social bonds that traditional suburbs often lack.</p>
+        </div>
+    </div>
+
+    <div id="gallery-modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gallery-modal-1')">&times;</span>
+            <img src="assets/images/gallery-1.jpg" alt="Culdesac Tempe aerial view" style="width: 100%;">
+        </div>
+    </div>
+
+    <div id="gallery-modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gallery-modal-2')">&times;</span>
+            <img src="assets/images/gallery-2.jpg" alt="Community courtyard" style="width: 100%;">
+        </div>
+    </div>
+
+    <div id="gallery-modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gallery-modal-3')">&times;</span>
+            <img src="assets/images/gallery-3.jpg" alt="Residents walking" style="width: 100%;">
+        </div>
+    </div>
+
+    <div id="gallery-modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gallery-modal-4')">&times;</span>
+            <img src="assets/images/gallery-4.jpg" alt="Bike lanes" style="width: 100%;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
